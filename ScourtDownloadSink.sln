@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScourtDownloadSink", "ScourtDownloadSink.csproj", "{BF44FD3A-80AC-4933-AC90-C53B8DEF4D80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF44FD3A-80AC-4933-AC90-C53B8DEF4D80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF44FD3A-80AC-4933-AC90-C53B8DEF4D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF44FD3A-80AC-4933-AC90-C53B8DEF4D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF44FD3A-80AC-4933-AC90-C53B8DEF4D80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56507E54-EEDF-47DC-A5B3-3965E277B29F}
+	EndGlobalSection
+EndGlobal
