@@ -37,7 +37,7 @@ class Program {
 					using var stream = await response.Content.ReadAsStreamAsync();
 					using var fs = new FileStream(fileName, FileMode.Create);
 
-                    var bufferSize = 81920;
+					var bufferSize = 81920;
 					var totalBytesRead = 0;
 					var buffer = new Memory<byte>(new byte[bufferSize]);
 					int bytesRead;
@@ -47,7 +47,7 @@ class Program {
 						Console.Write($"\rDownloaded {totalBytesRead / 1e6,5:N0} / {fileSize / 1e6,5:N0} MB ({((float)totalBytesRead / fileSize) * 100,3:N0}%)");
 					}
 
-                    Console.WriteLine();
+					Console.WriteLine();
 					Console.WriteLine($"Successfully downloaded {fileName}.");
 				} else {
 					Console.Write("Failed to download.");
