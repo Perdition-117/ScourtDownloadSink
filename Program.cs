@@ -18,7 +18,12 @@ class Program {
 
 		var listener = new HttpListener();
 		listener.Prefixes.Add($"http://localhost:{ListenPort}/");
-		listener.Start();
+		try {
+			listener.Start();
+		} catch (HttpListenerException e) {
+			Console.Error.WriteLine(e.Message);
+			return;
+		}
 
 		Console.WriteLine($"Listening on port {ListenPort}");
 
