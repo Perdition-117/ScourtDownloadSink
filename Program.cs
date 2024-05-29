@@ -44,10 +44,10 @@ class Program {
 
 					var bufferSize = 81920;
 					var totalBytesRead = 0;
-					var buffer = new Memory<byte>(new byte[bufferSize]);
+					var buffer = new byte[bufferSize];
 					int bytesRead;
 					while ((bytesRead = await stream.ReadAsync(buffer)) != 0) {
-						await fs.WriteAsync(buffer);
+						await fs.WriteAsync(buffer.AsMemory(0, bytesRead));
 						totalBytesRead += bytesRead;
 						Console.Write($"\rDownloaded {totalBytesRead / 1e6,5:N0} / {fileSize / 1e6,5:N0} MB ({((float)totalBytesRead / fileSize) * 100,3:N0}%)");
 					}
